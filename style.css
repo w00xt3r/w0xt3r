@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    filter:saturate(108%)
+}
+
+body{
+    animation: transitionIn .5s;
+    min-height: 100vh;
+    background:#2b1055;
+    overflow: clip;
+}
+
+@keyframes transitionIn{
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    z-index: 10000;
+}
+
+header .logo{
+    color:#fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style:none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration:none;
+    padding: 6px 15px;
+    color:#fff;
+    border-radius:20px;
+}
+
+header ul li a:hover,
+header ul li a.active{
+    background: #fff;
+    color:#2b1055;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 102vh;
+    padding: 100px;
+}
+section img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .text{
+    position: absolute;
+    left: 12.6em;
+    top: 4em;
+    color: #fff;
+    font-size: 50px;
+    font-style: oblique;
+}
+
+
+section .paragraph{
+    padding-top: 1.5%;
+    font-weight: 550;
+    text-transform: uppercase;
+    color:rgb(209, 209, 209);
+    font-size: 30px;
+    font-style: italic;
+}
+
+section .main-paragraph{
+    margin-top: 10px;
+    color:#9c8ec4;
+    letter-spacing: .5px;
+    word-spacing: .2px;
+    font-weight: 400;
+}
+
+section .stars2{
+    opacity: 35%;
+}
+
+section .future{
+    padding-top: 7%;
+    font-weight: 550;
+    text-transform: uppercase;
+    color:rgb(209, 209, 209);
+    font-size: 30px;
+    font-style: italic;
+}
+
+section  .future-ul{
+    color: #9c8ec4;
+    letter-spacing: .5px;
+    word-spacing: .2px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+
+section .main-text-work{
+    margin-top: 12%;
+    margin-left:15%;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 39px;
+}
+
+section .stars3{
+    opacity: 45%;
+}
+
+/* Media */
+/*IPHONE 5/SE START*/
+
+@media screen and (max-width:325px){
+
+    header{
+        padding-right: 5%;
+        padding-left: 15px;
+    }
+
+    header .logo{
+        font-size: 12px;
+    }
+
+    header ul{
+        font-size: 14.5px;
+        letter-spacing: 1px;
+        word-spacing: none;
+        padding-right: 0px;
+        
+    }
+
+    header ul li{
+        margin-left: 1px;
+    }
+
+    header ul li a{
+        padding:6px 10px;
+    }
+
+    section h2.text{
+        top: 6em;
+        left: 2.1em;
+        font-size: 35px;
+    }
+
+    section .paragraph{
+        font-size: 12px;
+        
+    }
+
+    section .main-paragraph{
+        font-size: 11px;
+        color: #c0b5df;
+    }
+
+    section .future{
+        font-size: 20px;
+    }
+
+    section .future-ul{
+        font-size:15px;
+        color: #c0b5df;
+    }
+
+    section .main-text-work{
+        font-size: 27px;
+        position: absolute;
+        left: 0;
+        padding-right: 11%;
+        top: 30%;
+    }
+
+}
+
+/*IPHONE 5/SE END*/
+
+/*IPHONE X AND ABOVE START*/
+
+@media screen and (max-width:400px){
+
+    header{
+        padding-right: 5%;
+        padding-left: 15px;
+    }
+
+    header .logo{
+        font-size: 15px;
+    }
+
+    header ul{
+        font-size: 12px;
+        letter-spacing: 1px;
+        word-spacing: none;
+        padding-right: 0px;
+        
+    }
+
+    header ul li{
+        margin-left: 1px;
+    }
+
+    header ul li a{
+        padding:6px 10px;
+    }
+
+    section{
+        object-fit: cover;
+    }
+
+    section .text{
+        top: 6.2em;
+        left: 1.8em;
+        font-size: 42px;
+    }
+
+    section .paragraph{
+        font-size: 22px;
+
+    }
+
+    section .main-paragraph{
+        font-size: 17px;
+        color: #c0b5df;
+    }
+
+    section .future{
+        font-size: 22px;
+    }
+
+    section .future-ul{
+        font-size:17px;
+        color: #c0b5df;
+    }
+
+    section .main-text-work{
+        font-size: 32px;
+        position: absolute;
+        left: 0;
+        padding-right: 20px;
+        top: 30%;
+    }
+
+}
+
+/*IPHONE X AND ABOVE END*/
+
+
+/*Mobile screen Start*/
+
+@media screen and (max-width:480px) {
+    
+    section .text{
+      left: 2.1em;
+    }
+
+    header{
+        padding-left: 12px;
+        font-size: 13px ;
+    }
+}
+
+/*Mobile Screen End*/
+
+@media screen and (min-width:481px) and (max-width:600px){
+    section .text{
+        left: 3em;
+    }
+
+    header{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1000px) {
+    section .text{
+        left: 3.9em;
+    }
+}
+
+
+/* Ipad Pro Start*/
+
+@media screen and (min-width: 1024px) and (max-width:1050px){
+    section .text{
+        left:8.5em;
+        top:5em;
+    }
+}
+
+/* Ipad Pro End*/
+    
+
+
+
+
+/* Media End*/
