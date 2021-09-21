@@ -91,7 +91,7 @@ section img{
 
 section .text{
     position: absolute;
-    left: 12.6em;
+    left: 13em;
     top: 4em;
     color: #fff;
     font-size: 50px;
@@ -252,9 +252,9 @@ section .stars3{
         object-fit: cover;
     }
 
-    section .text{
-        top: 6.2em;
-        left: 1.8em;
+    section h2.text{
+        top: 5.2em;
+        left: 2em;
         font-size: 42px;
     }
 
@@ -295,7 +295,8 @@ section .stars3{
 @media screen and (max-width:480px) {
     
     section .text{
-      left: 2.1em;
+        top: 4em;
+      left: 1.6em;
     }
 
     header{
@@ -334,8 +335,5 @@ section .stars3{
 
 /* Ipad Pro End*/
     
-
-
-
 
 /* Media End*/
